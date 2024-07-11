@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+    background-color: white; /* Default light mode background color */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Full viewport height */
+    font-family: Arial, sans-serif; /* Change font family as needed */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 400px; /* Limit grid width for better readability */
+    padding: 20px;
+    background-color: rgb(255, 69, 0); /* Updated to a beautiful color */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 99, 71); /* Updated to a beautiful color */
+    border-radius: 8px;
+    padding: 10px;
+    height: 108px;
+}
+
+.flex button {
+    width: 100px; /* Ensure consistent button width */
+    height: 100px; /* Ensure consistent button height */
+    border: none;
+    background-color: white;
+    border-radius: 50%; /* Circular buttons */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px; /* Adjust font size */
+    font-weight: bold; /* Bold text for buttons */
+    color: rgb(255, 69, 0); /* Updated to match new color scheme */
+    text-transform: uppercase; /* Uppercase text */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.flex button:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Light gray background on hover */
+}
+
+.flex button:active {
+    opacity: 0.7; /* Reduced opacity when button is active */
+}
+
+.flex button.reset {
+    background-color: #333; /* Dark background for reset button */
+    color: white; /* White text for contrast */
+}
+
+.flex button.autoplay {
+    background-color: #4CAF50; /* Green background for autoplay button */
+    color: white; /* White text for contrast */
+}
+
+#dark {
+    font-size: 12px; /* Reduced font size */
+    padding: 5px 10px; /* Reduced padding */
+    background-color: #555; /* Gray background for toggle button */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+#dark:hover {
+    background-color: #777; /* Lighter gray on hover */
+}
+
+.dis-pic {
+    max-width: 25%;
+    max-height: 25%;
+    border-radius: 50%; /* Maintain circular shape for images */
+}
+.rock{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+.paper{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+.scissor{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+.wl {
+    font-size: 24px; /* Slightly smaller font size for results */
+    margin: 10px 0; /* Margin for top and bottom */
+    text-align: center; /* Center align text */
+}
+
+.scorecard {
+    color: white;
+    text-align: center; /* Center align text */
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #333; /* Dark background color */
+    color: white; /* Light text color for better readability */
+}
+
+.dark-mode .grid {
+    background-color: #444; /* Darker background for the game grid */
+}
+
+.dark-mode .flex {
+    background-color: #555; /* Darker background for the flex container */
+}
+
+/* Responsive Design (Optional) */
+@media (max-width: 768px) {
+    .grid {
+        max-width: 300px; /* Adjust grid width for smaller screens */
+    }
+    .flex {
+        flex-direction: column; /* Stack buttons vertically on smaller screens */
+        align-items: center; /* Center align buttons */
+    }
+    .flex button {
+        margin-bottom: 10px; /* Add spacing between buttons */
+    }
+}
+.button-section{
+    background-color:rgb(255, 69, 0) ;
+}
+.key{
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color:yellow;
+    cursor: pointer;
+}
+
+ .key:hover{
+    background-color: yellowgreen;
+ }

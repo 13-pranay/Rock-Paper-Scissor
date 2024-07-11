@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="rps.css">
+    <style>
+        body {
+            background-color: #1a1a2e; /* Dark blue background color */
+            color: #ffffff; /* White text color */
+            display: flex;
+            justify-content: center;
+            font-family: Arial, sans-serif; /* Optional: Choose a suitable font */
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="flex">
+            <p class="title">Rock Paper Scissors</p>
+            <div>
+                <button id="dark" onclick="toggledark()">dark</button>
+            </div>
+        </div>
+        
+        <div class="flex">
+            <div>
+                <button onclick="playgame('Rock')">
+                    <img class="rock" src="images/rock.jpg" alt="Rock">
+                </button>
+            </div>
+            <div>
+                <button onclick="playgame('Paper')">
+                    <img class="paper" src="images/paper.jpg" alt="Paper">
+                </button>
+            </div>
+            <div>
+                <button onclick="playgame('Scissor')">
+                    <img class="scissor" src="images/scissor.jpg" alt="Scissor">
+                </button>
+            </div>
+        </div>
+
+        <div class="result-section">
+            <p class="wl"></p>
+            <p class="cp"></p>
+            <p class="scorecard">wins: 0 loses: 0 tied: 0<br>you: computer:<br>win/lose</p>
+        </div>
+
+        <div class="buttons-section">
+            <button class="key" onclick="reset()">Reset score</button>
+            <button class="key" id="autobutton" onclick="toggle()">autoplay</button>
+        </div>
+    </div>
+
+    <script src="rps.js"></script>
+</body>
+</html>
